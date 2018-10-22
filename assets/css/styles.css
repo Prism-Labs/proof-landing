@@ -11,6 +11,8 @@ a {
 	font-family: Ubuntu;
 }
 
+h1{font-size:3em;font-weight:800;}
+
 h1, h2, h3, h4, h5, p {
 	font-family: Ubuntu;
 	font-style: normal;
@@ -26,7 +28,6 @@ button {
 	border: 3px solid #9C41E3;
 	border-radius: 25px;
 	text-decoration: white;
-	width: 150px;
 	padding: 10px;
 	color: white;
 	font-weight: bold;
@@ -38,6 +39,62 @@ button {
 
 button:hover {
 	transform: scale(1.05);
+}
+
+
+section .section-wrapper > div.columns {
+    display: inherit;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section .section-wrapper {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1064px;
+    margin: 0 50px;
+    width: calc(100% - 100px);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: column;
+}
+
+section .section-wrapper > div.columns > div {
+    width: 43.5%;
+}
+
+@media (max-width: 768px){
+nav button {display:none;}
+nav a {display:none;}
+h1{font-size:2em;}
+section .section-wrapper > div.columns {
+    flex-direction: column;
+}
+section .section-wrapper > div.columns > div:first-child {
+    margin-bottom: 30px;
+}
+section .section-wrapper > div.columns > div, .container .item {
+    width: 100% !important;
+}
+}
+
+.columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 #small-btn {
@@ -111,13 +168,10 @@ nav {
 }
 
 .container-center img {
-	 margin: 50px 100px;
 }
 
 .item-signup-header {
-	padding: 20px;
 	text-align: center;
-
 }
 
 .item-signup-header button {
@@ -130,7 +184,6 @@ nav {
 	border: 3px solid #77C484;
 	padding: 20px;
 	margin-top: 50px;
-	width: 300px;
 	font-size: 18px;
 }
 
@@ -147,26 +200,12 @@ nav {
 	padding: 75px 0px;
 }
 
-#container-header-body-badges {
-	text-align: center;
-	width: 50%;
-}
-
 .item {
 	text-align: center;
-	width: 20%;
-	margin-bottom: 40px;
-}
-
-.item-signup-header {
-	width: 40%;
-	padding-left: 100px;
 }
 
 #github-btn {
 	cursor: pointer;
-	max-width: 200px;
-	margin: 100px;
 }
 
 .container-signup {
@@ -175,9 +214,7 @@ nav {
 }
 
 .container-signup button {
-	display: inline-block;
 	padding: 20px;
-	width: 400px;
 	font-size: 18px;
 }
 
@@ -191,6 +228,7 @@ nav {
 	max-width: 60px;
 	display: inline-block;
 	padding: 10px;
+	margin: 1em;
 }
 
 .icon {
@@ -212,3 +250,4 @@ nav {
 #gitter:hover{
 	background-color: #A94141;
 }
+
