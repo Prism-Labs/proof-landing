@@ -60,8 +60,9 @@ section .section-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1064px;
-    margin: 0 50px;
+    min-height:400px;
+    max-width: 964px;
+    margin: 20px auto;
     height:calc(100% - 100px)
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -77,6 +78,7 @@ section .section-wrapper > div.columns > div {
 nav {display:none;}
 nav a {display:none;}
 h1{font-size:2.2em;margin:1.2em 0;}
+section .section-wrapper {margin:0;padding:0 2em;}
 section .section-wrapper > div.columns {
     flex-direction: column;
 }
