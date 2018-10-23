@@ -61,7 +61,7 @@ section .section-wrapper {
     display: -ms-flexbox;
     display: flex;
     min-height:400px;
-    max-width: 964px;
+    max-width: 1180px;
     margin: 20px auto;
     height:calc(100% - 100px)
     -webkit-box-orient: horizontal;
@@ -97,7 +97,7 @@ section .section-wrapper > div.columns {
 section .section-wrapper > div.columns > div:first-child {
     margin-bottom: 30px;
 }
-section .section-wrapper > div.columns > div, .container .item {
+section .section-wrapper > div.columns > div{
     width: 100% !important;
 }
 
