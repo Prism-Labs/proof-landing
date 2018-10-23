@@ -6,15 +6,16 @@ body {
 a {
 	text-decoration: none;
 	font-size: 24px;
-	margin: 0px 30px;
 	color: inherit;
 	font-family: Ubuntu;
 }
 
 h1{
-	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    letter-spacing: -.02em;
     font-size: 52px;
-    font-weight: 600;
+    opacity:.65 !important;
+    line-height: 2.2em;
     margin-top: 0;
 }
 
@@ -74,7 +75,19 @@ section .section-wrapper > div.columns > div {
     width: 43.5%;
 }
 
+nav a,
+nav button{
+	margin-left:2em;
+}
+
 @media (max-width: 768px){
+.item {
+	width:100%;
+}
+.item-signup-header{
+	margin-top:-2em;
+}
+
 nav {display:none;}
 nav a {display:none;}
 h1{font-size:2.2em;margin:1.2em 0;}
@@ -88,6 +101,8 @@ section .section-wrapper > div.columns > div:first-child {
 section .section-wrapper > div.columns > div, .container .item {
     width: 100% !important;
 }
+
+
 }
 
 .columns {
@@ -155,7 +170,7 @@ nav {
 #white {
 	color: white;
 	opacity: 1;
-
+	font-size:1.75em;
 }
 
 .container {
@@ -209,6 +224,8 @@ nav {
 }
 
 .item {
+	width:30%;
+	margin-right:2%;
 	text-align: center;
 }
 
@@ -228,6 +245,7 @@ nav {
 
 .container-footer {
 	display: flex;
+	padding:1em 0;
 	justify-content: space-around;
 }
 
@@ -235,7 +253,6 @@ nav {
 	height: 2.5em;
 	width: 2.5em;
 	display: inline-block;
-	margin: 1.5em 0 0  1em;
 }
 
 .icon {
