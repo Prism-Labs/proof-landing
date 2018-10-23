@@ -7,20 +7,19 @@ a {
 	text-decoration: none;
 	font-size: 24px;
 	color: inherit;
-	font-family: Ubuntu;
 }
 
 h1{
-    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif !important;
     letter-spacing: -.02em;
-    font-size: 52px;
+    font-size: 50px;
     opacity:.65 !important;
     line-height: 2.2em;
     margin-top: 0;
 }
 
 h1, h2, h3, h4, h5, p {
-	font-family: Ubuntu;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif !important;
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
@@ -90,7 +89,7 @@ nav button{
 
 nav {display:none;}
 nav a {display:none;}
-h1{font-size:2.2em;margin:1.2em 0;}
+h1{font-size:2.2em;margin:-1em 0 1em 0;}
 section .section-wrapper {margin:0;padding:0 2em;}
 section .section-wrapper > div.columns {
     flex-direction: column;
@@ -158,9 +157,8 @@ nav {
 	justify-content: space-between;
 }
 
-#grey {
+.grey {
 	background-color: #FDFDFD;
-	padding: 50px;
 }
 
 #black {
@@ -228,6 +226,8 @@ nav {
 	margin-right:2%;
 	text-align: center;
 }
+
+section{padding:3em 0 0 0;}
 
 #github-btn {
 	cursor: pointer;
